@@ -1,0 +1,28 @@
+package estruturasSelecao;
+
+import java.util.Scanner;
+
+public class TerrenoGrandeEPequeno {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o valor da base do rentângulo: ");
+        double base = sc.nextDouble();
+
+        System.out.println("Digite o valor da altura do retângulo: ");
+        double altura = sc.nextDouble();
+
+        double area = base * altura;
+
+        if (area > 100) {
+            System.out.println("Terreno grande");
+        }
+        else {
+            System.out.println("Terreno pequeno");
+        }
+
+        sc.close();
+    }
+}
